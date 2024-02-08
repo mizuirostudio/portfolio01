@@ -452,7 +452,6 @@ header {
     background-size: 70vh;
     top: 20vh;
     left: -20vh;
-    overflow: hidden;
     animation: rotation 8s linear infinite;
   }
 
@@ -847,7 +846,6 @@ header {
     background-size: 70vh;
     bottom: -60vh;
     right: -20vh;
-    overflow: hidden;
     animation: rotation 8s linear infinite;
   }
 }
