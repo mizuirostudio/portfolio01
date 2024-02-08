@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="架空の創作料理居酒屋、旬彩こかげのホームページです。メニューや予約状況、求人情報などをご確認いただけます。">
+  <title>架空の創作料理居酒屋 旬彩こかげ</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/kokage-favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img src="images/kokage-logo-white.svg" class="logo-white" alt="旬彩こかげ ホームへ">
+          <img src="images/kokage-logo-black.svg" class="logo-black" alt="旬彩こかげ ホームへ">
+        </a>
+      </h1>
+      <nav class="header-nav">
+        <ul class="header-nav-links">
+          <a href="#dish"><li class="header-nav-item">お品書き</li></a>
+          <a href="#availability"><li class="header-nav-item">予約状況</li></a>
+          <a href="#recruit"><li class="header-nav-item">求人情報</li></a>
+          <a href="#information"><li class="header-nav-item">店舗情報</li></a>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="sp-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <script>
+          jQuery(function($) {
+            $('.sp-menu-btn').on('click', function() {
+              $('.header-nav ul, .sp-menu-btn').toggleClass('open');
+            });
+          });
+        </script>
+        <div class="tel-icon-wrapper">
+          <a href="tel:+0000000000">
+            <div class="tel">
+              <span>00-0000-0000</span>
+            </div>
+          </a>
+        </div>
+        <button type="button" onclick="location.href='#'" class="btn-color">空席確認・ネット予約</button>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <div class="slide-fv">
+    <div class="slide-image-fv"></div>
+    <div class="slide-image-fv"></div>
+    <div class="slide-image-fv"></div>
+    <div class="top-news">
+      <a href="#recruit">
+        <p>
+          <time datetime="20XX.00.00">20XX.00.00</time>
+          店舗スタッフを募集しています。
+        </p>
+      </a>
+    </div>
+    <script>
+      jQuery(function($) {
+        $(window).on('scroll', function() {
+          if ($('.slide-fv').height() < $(this).scrollTop()) {
+            $('header, .header-nav ul li, .tel, .logo-white').addClass('change-color');
+          } else {
+            $('header, .header-nav ul li, .tel, .logo-white').removeClass('change-color');
+          }
+        });
+      });
+    </script>
+  </div>
+
+  <section class="concept">
+    <h2><span class="h2">旬の食材と</span><span class="h2">うまい酒を</span><span class="h2">心ゆくまで。</span></h2>
+    <p>大通りを一歩入ったところにある<br>創作料理屋「旬彩こかげ」。<br>素材をいかした季節のお料理を<br>選りすぐりのお酒とともに<br>お腹いっぱいお楽しみください。</p>
+  </section>
+
+  <div class="parallax01"></div>
+
+  <section class="dish">
+    <h2 id="dish">お品書き</h2>
+    <p>価格は税込みです。</p>
+    <figure class="menu-card">
+      <img src="images/menu01.webp" alt="">
+      <figcaption>
+        <div class="menu-card-label label01">
+          <p>一番人気</p>
+        </div>
+        <div class="menu-description description01">
+          <div class="menu-inner">
+            <p>
+              <span>90分飲み放題付き</span>
+              <span>こかげの名物コース</span>
+              <span>0,000円/お1人様</span>
+            </p>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキスト
+            </p>
+            <button type="button" onclick="location.href='#'" class="btn-color">ご予約にすすむ</button>
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+    <figure class="menu-card">
+      <img src="images/menu02.webp" alt="">
+      <figcaption>
+        <div class="menu-card-label label02">
+          <p>おすすめ</p>
+        </div>
+        <div class="menu-description description02">
+          <div class="menu-inner">
+            <p>
+              <span>120分飲み放題付き</span>
+              <span>季節の逸品コース</span>
+              <span>0,000円/お1人様</span>
+            </p>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキスト
+            </p>
+            <button type="button" onclick="location.href='#'" class="btn-color">ご予約にすすむ</button>
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+
+    <p>Instagramでは季節のお料理など<br>最新情報をご覧いただけます。</p>
+    <button type="button" onclick="location.href='#'" class="btn-outline">Instagram↗</button>
+  </section>
+
+  <div class="slide-menu">
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+    <div class="slide-image-menu"></div>
+  </div>
+
+  <section class="availability" id="availability">
+    <h2>ネット予約の空席状況</h2>
+    <p>日付をお選びください。予約可能な日時を表示します。</p>
+    <table class="calender">
+      <thead>
+        <tr>
+          <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+          <th>土</th>
+          <th>日</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0/24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td><a href="#">-</a></td>
+          <td><a href="#">○</a></td>
+          <td><a href="#">○</a></td>
+          <td><a href="#">○</a></td>
+          <td><a href="#">○</a></td>
+          <td><a href="#">○</a></td>
+          <td><a href="#">○</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" onclick="location.href='#'" class="btn-color">他の日付で検索する</button>
+  </section>
+
+  <div class="parallax02"></div>
+
+  <section class="recruit">
+    <h2 id="recruit">求人情報</h2>
+    <p>
+      旬彩こかげでは、ただいまスタッフを募集しています。<br>おいしいまかない付き！一緒に楽しく働きましょう。
+    </p>
+    <div class="recruit-inner">
+      <div class="circle">
+        <span>正社員</span>
+      </div>
+      <dl>
+        <dt>勤務内容</dt>
+        <dd>調理、ホール、洗い場</dd>
+        <dt>給与</dt>
+        <dd>月給00万円～</dd>
+        <dt>その他</dt>
+        <dd>年齢不問、交通費全額支給、社保完備</dd>
+      </dl>
+      <div class="circle">
+        <span>アルバイト</span>
+      </div>
+      <dl>
+        <dt>勤務内容</dt>
+        <dd>調理補助、ホール、洗い場</dd>
+        <dt>給与</dt>
+        <dd>時給0,000円～</dd>
+        <dt>その他</dt>
+        <dd>年齢不問、交通費全額支給、社保完備</dd>
+      </dl>
+    </div>
+    <p>
+      ご不明な点がありましたらお問い合わせください。
+    </p>
+    <button type="button" onclick="location.href='#'" class="btn-color">ご応募・お問い合わせ</button>
+  </section>
+</main>
+
+<footer>
+  <h2 id="information">店舗情報</h2>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="images/kokage-logo-black.svg" alt=""></div>
+    <dl>
+      <dt>住所</dt>
+      <dd>〒000-0000 東京都XX区XX0-00-0</dd>
+      <dt>営業時間</dt>
+      <dd>17:00-24:00（L.O.23:00）</dd>
+      <dt>営業日</dt>
+      <dd>不定休</dd>
+      <dt>座席数</dt>
+      <dd>カウンター8席、テーブル席8席</dd>
+      <dt>クレジットカード</dt>
+      <dd>可（VISA、Mastercard、JCB、American Express、Diners）</dd>
+      <dt>電子マネー決済</dt>
+      <dd>可（PayPay）</dd>
+    </dl>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12969.799804475297!2d139.65768961042698!3d35.641284361599006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f49927231ef9%3A0xcc2931a04ac73fe6!2z44CSMTU0LTAwMjQg5p2x5Lqs6YO95LiW55Sw6LC35Yy65LiJ6LuS6Iy25bGL!5e0!3m2!1sja!2sjp!4v1706664266249!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a href="#">&copy; みずいろスタジオ</a>
+    <a href="#">プライバシーポリシー</a>
+  </div>
+</footer>
+
+</body>
+
+</html>
