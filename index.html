@@ -38,13 +38,6 @@
           <span></span>
           <span></span>
         </button>
-        <script>
-          jQuery(function($) {
-            $('.sp-menu-btn').on('click', function() {
-              $('.header-nav ul, .sp-menu-btn').toggleClass('open');
-            });
-          });
-        </script>
         <div class="tel-icon-wrapper">
           <a href="tel:+0000000000">
             <div class="tel">
@@ -70,17 +63,6 @@
         </p>
       </a>
     </div>
-    <script>
-      jQuery(function($) {
-        $(window).on('scroll', function() {
-          if ($('.slide-fv').height() < $(this).scrollTop()) {
-            $('header, .header-nav ul li, .tel, .logo-white').addClass('change-color');
-          } else {
-            $('header, .header-nav ul li, .tel, .logo-white').removeClass('change-color');
-          }
-        });
-      });
-    </script>
   </div>
 
   <section class="concept">
@@ -255,7 +237,23 @@
     <a href="#">プライバシーポリシー</a>
   </div>
 </footer>
+<script>
+  jQuery(function($) {
+    $('.sp-menu-btn').on('click', function() {
+      $('.header-nav ul, .sp-menu-btn').toggleClass('open');
+    });
+  });
+
+  jQuery(function($) {
+    $(window).on('scroll', function() {
+      if ($('.slide-fv').height() < $(this).scrollTop()) {
+        $('header, .header-nav ul li, .tel, .logo-white').addClass('change-color');
+      } else {
+        $('header, .header-nav ul li, .tel, .logo-white').removeClass('change-color');
+      }
+    });
+  });
+</script>
 
 </body>
-
 </html>
