@@ -28,6 +28,7 @@ body {
   font-family: 'Zen Old Mincho', serif;
   font-weight: 400;
   width: 100%;
+  overflow-x: clip;
 }
 
 h2 {
