@@ -25,7 +25,7 @@ body {
   font-size: 1.6rem;
   color: var(--main-text);
   line-height: 1.8;
-  font-family: 'Zen Old Mincho', serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 400;
   width: 100%;
   overflow-x: clip;
@@ -39,13 +39,13 @@ a {
   text-decoration: none;
   color: inherit;
 
-  @media(hover: hover) {
+  @media (hover: hover) {
     &:hover {
       color: var(--main-color);
       transition: 0.3s;
     }
   }
-  @media(hover: none) {
+  @media (hover: none) {
     &:active {
       color: var(--main-color);
       transition: 0.3s;
@@ -63,13 +63,13 @@ li {
   height: 48px;
   padding: 0 1.6rem;
 
-  @media(hover: hover) {
+  @media (hover: hover) {
     &:hover {
       transition: 0.5s;
       background-color: var(--sub-color);
     }
   }
-  @media(hover: none) {
+  @media (hover: none) {
     &:active {
       transition: 0.5s;
       background-color: var(--sub-color);
@@ -84,7 +84,7 @@ li {
   height: 48px;
   padding: 0 1.6rem;
 
-  @media(hover: hover) {
+  @media (hover: hover) {
     &:hover {
       color: #ffffff;
       transition: 0.5s;
@@ -92,13 +92,23 @@ li {
       border: none;
     }
   }
-  @media(hover: none) {
+  @media (hover: none) {
     &:active {
       color: #ffffff;
       transition: 0.5s;
       background-color: var(--sub-color);
       border: none;
     }
+  }
+}
+
+.orange-head {
+  padding-top: 96px;
+  font-size: 4rem;
+
+  &::first-letter {
+    font-size: 6rem;
+    color: var(--main-color);
   }
 }
 
@@ -171,9 +181,9 @@ header {
     top: 0;
     left: 0;
   }
-  
+
   .pc-header-inner {
-    width: 100%;    
+    width: 100%;
   }
 
   .header-cta {
@@ -203,7 +213,7 @@ header {
   }
   .header-nav ul.open {
     top: 0;
-  } 
+  }
 }
 
 .header-nav ul li a {
@@ -211,13 +221,13 @@ header {
   display: block;
   pointer-events: auto;
 
-  @media(hover: hover) {
+  @media (hover: hover) {
     &:hover {
       color: var(--main-color);
       transition: 0.3s;
     }
   }
-  @media(hover: none) {
+  @media (hover: none) {
     &:active {
       color: var(--main-color);
       transition: 0.3s;
@@ -225,11 +235,11 @@ header {
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0.8vw;    
+    padding: 0.8vw;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 16px;    
+    padding: 16px;
   }
 }
 
@@ -240,13 +250,13 @@ header {
     height: 48px;
     background-color: var(--main-text);
 
-    @media(hover: hover) {
+    @media (hover: hover) {
       &:hover {
         opacity: 0.5;
         transition: 0.3s;
       }
     }
-    @media(hover: none) {
+    @media (hover: none) {
       &:active {
         opacity: 0.5;
         transition: 0.3s;
@@ -321,14 +331,14 @@ header {
     margin-top: 12px;
   }
 }
-@media(hover: hover) {
+@media (hover: hover) {
   .tel:hover::before {
     background-image: url(images/icon-tel-color.svg);
     transition: 0.3s;
     content: "";
   }
 }
-@media(hover: none) {
+@media (hover: none) {
   .tel:active::before {
     background-image: url(images/icon-tel-color.svg);
     transition: 0.3s;
@@ -343,20 +353,20 @@ header {
     content: "";
   }
 }
-@media(hover: hover) {
+@media (hover: hover) {
   .tel.change-color:hover::before {
     background-image: url(images/icon-tel-color.svg);
     transition: 0.3s;
     content: "";
   }
 }
-@media(hover: none) {
+@media (hover: none) {
   .tel.change-color:active::before {
     background-image: url(images/icon-tel-color.svg);
     transition: 0.3s;
     content: "";
   }
-} 
+}
 
 @media screen and (max-width: 767px) {
   .header-cta .btn-color {
@@ -370,7 +380,6 @@ header {
       height: auto;
     }
   }
-
 }
 
 /* メイン */
@@ -527,63 +536,65 @@ header {
 
   @media screen and (min-width: 768px) {
     h2 {
-      font-size: 3.6rem;  
+      font-size: 3.6rem;
       padding: 3.6rem;
-  
-      &::before,&::after {
+
+      &::before,
+      &::after {
         position: absolute;
         content: "";
         width: 7.2rem;
         height: 7.2rem;
       }
-    
+
       span.h2 {
-        display: block;      
+        display: block;
         &:nth-child(2) {
-        text-indent: 3.6rem;
-        }  
+          text-indent: 3.6rem;
+        }
         &:nth-child(3) {
-        text-indent: 7.2rem;
+          text-indent: 7.2rem;
         }
       }
     }
-  
+
     p {
       font-size: 2rem;
       padding: 3.6rem;
-    }    
+    }
   }
-  
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
 
     h2 {
-      font-size: 2.4rem;  
+      font-size: 2.4rem;
       padding: 2.4rem;
-  
-      &::before,&::after {
+
+      &::before,
+      &::after {
         position: absolute;
         content: "";
         width: 4.8rem;
         height: 4.8rem;
       }
-    
+
       span.h2 {
-        display: block;      
+        display: block;
         &:nth-child(2) {
-        text-indent: 2.4rem;
-        }  
+          text-indent: 2.4rem;
+        }
         &:nth-child(3) {
-        text-indent: 4.8rem;
+          text-indent: 4.8rem;
         }
       }
     }
-  
+
     p {
       padding: 2.4rem;
-    }    
-  }  
+    }
+  }
 }
 
 @keyframes rotation {
@@ -606,7 +617,7 @@ header {
 
 .parallax {
   inset: 0;
-  position: fixed;  
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1000;
@@ -642,7 +653,7 @@ header {
     height: 108px;
     transform: translateX(50%);
   }
-  
+
   h2::after {
     content: "";
     position: absolute;
@@ -652,16 +663,6 @@ header {
     width: 12px;
     height: 12px;
     transform: rotate(45deg) translateX(-50%);
-  }
-
-  h2 {
-    padding-top: 96px;
-    font-size: 4rem;
-
-    &::first-letter {
-      font-size: 6rem;
-      color: var(--main-color);
-    }  
   }
 
   > p {
@@ -744,7 +745,7 @@ header {
 .menu-description {
   width: 50%;
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 1px 1px 3px 0 var(--gray) ;
+  box-shadow: 1px 1px 3px 0 var(--gray);
   position: absolute;
   margin-top: 3.2rem;
   padding: 1.6rem;
@@ -768,7 +769,7 @@ header {
     span {
       display: block;
       text-align: center;
-  
+
       &:nth-child(2) {
         font-size: 2.4rem;
       }
@@ -781,14 +782,14 @@ header {
   margin-left: 10px;
 
   @media screen and (max-width: 767px) {
-    margin-left: 0;    
+    margin-left: 0;
   }
 }
 .description02 {
   top: 0;
   right: 0;
   margin-right: 10px;
-  
+
   @media screen and (max-width: 767px) {
     left: 0;
     margin-left: 0;
@@ -804,36 +805,32 @@ header {
 }
 
 .slide-image-menu {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  flex-shrink: 0;
-  animation: slideauto 16s linear infinite;
-  margin-left: 16px;
+  width: auto;
+  height: 100%;
 
-  &:nth-child(1),&:nth-child(6) {
-    background-image: url(images/menu03.webp);
+  &:first-of-type {
+    animation: slide1 50s -25s linear infinite;
   }
-  &:nth-child(2),&:nth-child(7) {
-    background-image: url(images/menu04.webp);
-  }
-  &:nth-child(3),&:nth-child(8) {
-    background-image: url(images/menu05.webp);
-  }
-  &:nth-child(4),&:nth-child(9) {
-    background-image: url(images/menu06.webp);
-  }
-  &:nth-child(5),&:nth-child(10) {
-    background-image: url(images/menu07.webp);
+  &:last-of-type {
+    animation: slide2 50s linear infinite;
   }
 }
 
-@keyframes slideauto {
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
   0% {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-1080px);
+  to {
+    transform: translateX(-200%);
   }
 }
 
@@ -872,7 +869,8 @@ header {
     border-bottom: solid 2px;
   }
 
-  th,td {
+  th,
+  td {
     font-weight: 500;
     width: 4.8rem;
     height: 4rem;
@@ -899,7 +897,7 @@ header {
     height: 108px;
     transform: translateX(50%);
   }
-  
+
   h2::after {
     content: "";
     position: absolute;
@@ -909,16 +907,6 @@ header {
     width: 12px;
     height: 12px;
     transform: rotate(45deg) translateX(-50%);
-  }
-
-  h2 {
-    padding-top: 96px;
-    font-size: 4rem;
-
-    &::first-letter {
-      font-size: 6rem;
-      color: var(--main-color);
-    }  
   }
 
   button {
@@ -987,16 +975,6 @@ footer {
   margin-top: 120px;
   text-align: center;
 
-  h2 {
-    padding-top: 96px;
-    font-size: 4rem;
-
-    &::first-letter {
-      font-size: 6rem;
-      color: var(--main-color);
-    }
-  }
-
   .footer-inner {
     background-color: #f9f9f9;
     position: absolute;
@@ -1041,7 +1019,7 @@ footer {
       text-align: center;
       padding-top: 16px;
       padding-bottom: 16px;
-    }  
+    }
   }
 
   .map {
@@ -1055,7 +1033,7 @@ footer {
     width: 100%;
     height: 100%;
   }
-  
+
   a {
     display: block;
   }
@@ -1070,7 +1048,7 @@ footer {
   @media screen and (max-width: 767px) {
     .logo {
       z-index: 2;
-    }          
+    }
   }
 }
 
@@ -1099,7 +1077,7 @@ footer {
   padding: 16px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 100px;    
+    padding-top: 100px;
   }
 
   h1 {
@@ -1112,5 +1090,3 @@ footer {
     font-size: 2.4rem;
   }
 }
-
-
